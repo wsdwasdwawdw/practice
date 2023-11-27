@@ -4,8 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login Page</title>
-    <script src="script.js"></script>
-    <link rel="stylesheet" href="hello.css">
+    <script src="scripts/script.js"></script>
+    <link rel="stylesheet" href="styles/hello.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
@@ -63,7 +63,7 @@
         <!--Register-->
         <div id="Register" class="Registration isRegistered">
             <h1>Register</h1>
-            <form action="hello.html" class="Register" >
+            <div class="Register" >
                 <div class="input">
                     <input type="text" placeholder="Username" class="NUN" required>
                     <i class='bx bxs-user'></i>
@@ -77,9 +77,9 @@
                     <i class='bx bxs-lock-alt'></i>
                 </div>
                 <button class="signUp-btn" onclick="signUp()">Sign Up</button>
-            </form>
+            </div>
         </div>
-        <script src="localDB.js"></script>
+        <script src="scripts/localDB.js"></script>
     </div>
 </body>
 </html>
