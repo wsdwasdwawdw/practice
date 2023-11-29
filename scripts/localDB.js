@@ -24,6 +24,8 @@ function signUp(){
         localStorage.setItem("account", JSON.stringify(account));
     
         console.log(account);
+        window.open("hello.html");
+        
     }else{
         alert("not match");
     }
