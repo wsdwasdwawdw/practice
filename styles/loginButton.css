@@ -2,9 +2,16 @@ form{
     background: transparent;
     height: fit-content;
 }
+
 .wrapper{
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
     width: 420px;
-    background: transparent;
+    height: fit-content;
     padding: 40px;
     border-radius: 10px;
     border: 2px solid rgba(255, 255, 255, .2);
@@ -12,6 +19,7 @@ form{
     overflow: hidden;
     visibility: visible;
 }
+
 .wrapper .ion-icon{
     top: 0;
     right: 0;
@@ -23,6 +31,7 @@ form{
     align-items: center;
     transition: .5s;
 }
+
 .wrapper .LogReg{
     position: absolute;
     top: 5px;
@@ -38,20 +47,12 @@ form{
     border-top-left-radius: 10px;
 }
 
-
-
-
-
 .wrapper .LogReg .log-sec{
     background-color: rgba(255, 255, 255, .2);
 }
 .wrapper .LogReg .reg-sec{
     background-color: rgba(255, 255, 255, .2);
 }
-
-
-
-
 
 
 .wrapper .ion-icon:hover{
@@ -64,6 +65,8 @@ form{
     text-align: center;
     color: white;
 }
+
+/* Login */
 
 #Login{
     background-color: rgba(255, 255, 255, .2);
@@ -142,6 +145,7 @@ form{
 }
 
 
+/* Register */
 
 #Register{
     background-color: rgba(255, 255, 255, .2);
