@@ -4,15 +4,48 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Builder</title>
+    <style>
+        *{
+            margin: 0;
+        }
+        .sideNav{
+            height: 100%;
+            background-color: aqua;
+            padding-top: 20%;
+            z-index: 1;
+            position: fixed;
+        }
+        .sideNav ul{
+            list-style: none;
+            align-items: center;
+            font-size: 30px;
+        }
+        li{
+            margin-top: 50px;
+            margin-left: 0;
+            left: 10px;
+        }
+
+        .contents{
+            left: 207px;
+            position: fixed;
+            background-color: pink;
+            width: fit-content;
+            height: 100%;
+        }
+    </style>
 </head>
 <body>
-    <div class="sideVav">
+    <div class="sideNav">
         <ul>
             <li>Add Elements</li>
             <li>Add Section</li>
             <li>Add Pages</li>
             <li>Add Media</li>
         </ul>
+    </div>
+    <div class="contents">
+        <p>Paragraph</p>
     </div>
 </body>
 </html>
