@@ -7,12 +7,19 @@
     <style>
         *{
             margin: 0;
+            padding: 0;
+        }
+
+        html{
+            height: 100%;
+            width: 100%;
         }
         .sideNav{
+            display: flex;
             height: 100%;
             background-color: aqua;
-            padding-top: 20%;
             z-index: 1;
+            align-items: center;
             position: fixed;
         }
         .sideNav ul{
@@ -21,31 +28,71 @@
             font-size: 30px;
         }
         li{
-            margin-top: 50px;
-            margin-left: 0;
+            margin-bottom: 50px;
+            margin-left: 10px;
+            margin-right: 10px;
             left: 10px;
+            
+            transition: .5s;
+        }
+
+        li:hover{
+            background-color: rgba(96, 99, 97, 0.6);
+            cursor: pointer;
+            border-radius: 10px;
         }
 
         .contents{
-            left: 207px;
+            left: 190px;
             position: fixed;
             background-color: pink;
             width: fit-content;
+            padding-top: 175%;
             height: 100%;
+            align-self: center;
+            visibility: collapse;
+        }
+
+        #p{
+            margin-right: 10px;
+            margin-left: 10px;
+        }
+        .container-tools{
+            display: flex;
+            
+        }
+
+        button{
+            margin-left: 50%;
+            margin-top: 50%;
+        }
+    
+        img{
+            width: 200px;
+            height: auto;
+            margin-left: 10px;
+            margin-right: 10px;
         }
     </style>
+    <script src="scripts/builder.js"></script>
 </head>
 <body>
-    <div class="sideNav">
-        <ul>
-            <li>Add Elements</li>
-            <li>Add Section</li>
-            <li>Add Pages</li>
-            <li>Add Media</li>
-        </ul>
+    <div class="container-tools">
+        <div class="sideNav">
+            <ul>
+                <li onclick='button("Elements")'>Add Elements</li>
+                <li onclick='button("Section")'>Add Section</li>
+                <li onclick='button("Pages")'>Add Pages</li>
+                <li onclick='button("Media")'>Add Media</li>
+            </ul>
+        </div>
+        <div class="contents" id="contents">
+            <div id="p">Paragraph</div>
+            <div id="pic"></div>
+        </div>
     </div>
-    <div class="contents">
-        <p>Paragraph</p>
-    </div>
+
+    <button onclick="button()">Click me!</button>
+    
 </body>
 </html>
