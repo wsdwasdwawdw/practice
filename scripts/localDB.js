@@ -24,7 +24,7 @@ function signUp(){
         localStorage.setItem("account", JSON.stringify(account));
     
         console.log(account);
-        window.open("builder.html");
+        
         
     }else{
         alert("not match");
@@ -38,6 +38,7 @@ function login_btn(){
         console.log(value);
         if((value.username === Username.value) && (value.password === Password.value)){
             alert("Account found!!");
+            window.open("grapes.html");
         }
     });
 }
