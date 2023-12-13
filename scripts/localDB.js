@@ -6,7 +6,9 @@ const confirmPassword = document.querySelector(".NCPW");
 
 //const usernameArray = JSON.parse(sessionStorage.getItem("username"));
 
-let account = [] ? JSON.parse(localStorage.getItem("account")): [];
+let account = JSON.parse(sessionStorage.getItem("account")) || [];
+
+
 console.log(account);
 function signUp(){
 
@@ -21,7 +23,7 @@ function signUp(){
         newPassword.value = "";
         confirmPassword.value = "";
 
-        localStorage.setItem("account", JSON.stringify(account));
+        sessionStorage.setItem("account", JSON.stringify(account));
     
         console.log(account);
         
